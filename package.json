@@ -9,8 +9,8 @@
     "小说",
     "摸鱼"
   ],
-  "publisher": "hectorqin",
-  "version": "1.0.3",
+  "publisher": "hector",
+  "version": "2.0.0",
   "icon": "static/images/icon-green.png",
   "qna": "https://github.com/hectorqin/z-reader.git/issues",
   "bugs": {
@@ -237,7 +237,7 @@
     "glob": "^7.1.4",
     "mocha": "^6.1.4",
     "tslint": "^5.12.1",
-    "typescript": "^3.3.1",
+    "typescript": "^4.3.5",
     "vscode-test": "^1.2.0"
   },
   "dependencies": {
