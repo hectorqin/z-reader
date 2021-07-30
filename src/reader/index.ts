@@ -98,7 +98,7 @@ class ReaderDriver {
   }
 
   public getFileDir(): string {
-    const fileDir = workspace.getConfiguration('z-reader').get('fileDir', store.booksPath);
+    const fileDir = workspace.getConfiguration('z-reader-plus').get('fileDir', store.booksPath);
     return fileDir ? fileDir : store.booksPath;
   }
 

@@ -1,22 +1,22 @@
 import * as path from 'path';
 
 export enum Commands {
-  openReaderWebView = 'z-reader.local.openReaderWebView',
-  localRefresh = 'z-reader.command.refresh',
-  openLocalDirectory = 'z-reader.command.openLocalDirectory',
-  searchOnline = 'z-reader.command.searchOnline',
-  editTemplateHtml = 'z-reader.editTemplateHtml',
-  editTemplateCss = 'ez-reader.ditTemplateCss',
-  goProgress = 'z-reader.goProgress',
-  progressUpdate = 'z-reader.progress:update',
-  setOnlineSite = 'z-reader.command.setOnlineSite',
-  setEncoding = 'z-reader.command.setEncoding',
-  setChapterOrder = 'z-reader.command.setChapterOrder',
-  collectRefresh = 'z-reader.command.collectList',
-  editCollectList = 'z-reader.command.editCollectList',
-  collectBook = 'z-reader.command.collectBook',
-  clearCollect = 'z-reader.command.clearCollect',
-  cancelCollect = 'z-reader.command.cancelCollect',
+  openReaderWebView = 'z-reader-plus.local.openReaderWebView',
+  localRefresh = 'z-reader-plus.command.refresh',
+  openLocalDirectory = 'z-reader-plus.command.openLocalDirectory',
+  searchOnline = 'z-reader-plus.command.searchOnline',
+  editTemplateHtml = 'z-reader-plus.editTemplateHtml',
+  editTemplateCss = 'ez-reader-plus.ditTemplateCss',
+  goProgress = 'z-reader-plus.goProgress',
+  progressUpdate = 'z-reader-plus.progress:update',
+  setOnlineSite = 'z-reader-plus.command.setOnlineSite',
+  setEncoding = 'z-reader-plus.command.setEncoding',
+  setChapterOrder = 'z-reader-plus.command.setChapterOrder',
+  collectRefresh = 'z-reader-plus.command.collectList',
+  editCollectList = 'z-reader-plus.command.editCollectList',
+  collectBook = 'z-reader-plus.command.collectBook',
+  clearCollect = 'z-reader-plus.command.clearCollect',
+  cancelCollect = 'z-reader-plus.command.cancelCollect',
 }
 
 export enum WebViewMessage {
@@ -31,4 +31,4 @@ export const TemplatePath = {
   templateHtml: path.join('static', 'template', 'default', 'index.html')
 };
 
-export const TREEVIEW_ID = 'z-reader-menu';
+export const TREEVIEW_ID = 'z-reader-plus-menu';

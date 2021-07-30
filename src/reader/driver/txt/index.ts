@@ -5,7 +5,7 @@ import { ReaderDriver as ReaderDriverImplements } from '../../../@types';
 
 class ReaderDriver implements ReaderDriverImplements {
   private getEncoding() {
-    const vConfig = workspace.getConfiguration('z-reader');
+    const vConfig = workspace.getConfiguration('z-reader-plus');
     return vConfig.get('encoding', 'utf8');
   }
 

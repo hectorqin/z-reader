@@ -23,7 +23,7 @@ class ExplorerNodeManager implements Disposable {
 
   // 获取
   public getChapter(treeNode: TreeNode): Promise<TreeNode[]> {
-    const vConfig = workspace.getConfiguration('z-reader');
+    const vConfig = workspace.getConfiguration('z-reader-plus');
     const chapterOrder = vConfig.get('chapterOrder', '顺序');
     return readerDriver.getChapter(treeNode).then(chapters => {
       if (chapterOrder === '顺序') {

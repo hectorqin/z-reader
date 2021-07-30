@@ -35,6 +35,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     // 刷新
     commands.registerCommand(Commands.localRefresh, () => {
       commands.executeCommand('setContext', 'zreader.panel', 'local');
+      store.currentPanel = 'local';
       localRefresh()
     }),
     // 打开本地目录
@@ -42,6 +43,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     // 搜索 - 起点
     commands.registerCommand(Commands.searchOnline, () => {
       commands.executeCommand('setContext', 'zreader.panel', 'online');
+      store.currentPanel = 'online';
       searchOnline()
     }),
     commands.registerCommand(Commands.editTemplateHtml, () => editTemplateHtml()),
@@ -51,6 +53,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     // 加载收藏列表
     commands.registerCommand(Commands.collectRefresh, () => {
       commands.executeCommand('setContext', 'zreader.panel', 'collect');
+      store.currentPanel = 'collect';
       collectRefresh()
     }),
     // 编辑收藏列表
@@ -63,7 +66,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     commands.registerCommand(Commands.clearCollect, () => clearCollect()),
     // 设置
     commands.registerCommand(Commands.setOnlineSite, async () => {
-      const vConfig = workspace.getConfiguration('z-reader');
+      const vConfig = workspace.getConfiguration('z-reader-plus');
       const onlineSite = vConfig.get('onlineSite');
       const result = await window.showQuickPick(
         [
@@ -84,7 +87,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
       }
     }),
     commands.registerCommand(Commands.setEncoding, async () => {
-      const vConfig = workspace.getConfiguration('z-reader');
+      const vConfig = workspace.getConfiguration('z-reader-plus');
       const encoding = vConfig.get('encoding', 'utf8');
       const result = await window.showQuickPick(
         [
@@ -106,7 +109,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     }),
     // 设置章节顺序
     commands.registerCommand(Commands.setChapterOrder, async () => {
-      const vConfig = workspace.getConfiguration('z-reader');
+      const vConfig = workspace.getConfiguration('z-reader-plus');
       const chapterOrder = vConfig.get('chapterOrder', '顺序');
       const result = await window.showQuickPick(
         [

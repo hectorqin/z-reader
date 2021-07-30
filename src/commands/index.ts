@@ -102,11 +102,13 @@ export const cancelCollect = async function (treeNode: TreeNode) {
   }
   await config.setConfig('__collect_list', list);
   showNotification('取消收藏成功', 1000);
+  collectRefresh();
 }
 
 export const clearCollect = async function () {
   await config.setConfig('__collect_list', []);
   showNotification('清空收藏成功', 1000);
+  collectRefresh();
 }
 
 export const openLocalDirectory = function () {
@@ -116,7 +118,7 @@ export const openLocalDirectory = function () {
 const _searchOnline = async function (msg: string) {
   const notification = new Notification(`搜索: ${msg}`);
   try {
-    const vConfig = workspace.getConfiguration('z-reader');
+    const vConfig = workspace.getConfiguration('z-reader-plus');
     const onlineSite: string = vConfig.get('onlineSite', '起点');
     const treeNode = await readerDriver.search(msg, onlineSite);
     treeDataProvider.fire();

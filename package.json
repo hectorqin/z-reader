@@ -1,6 +1,6 @@
 {
-  "name": "z-reader",
-  "displayName": "z-reader",
+  "name": "z-reader-plus",
+  "displayName": "z-reader-plus",
   "description": "用来摸鱼或学习的小说阅读插件,支持在线搜索和本地阅读,支持txt和epub格式",
   "keywords": [
     "epub",
@@ -9,17 +9,17 @@
     "小说",
     "摸鱼"
   ],
-  "publisher": "aooiu",
+  "publisher": "hectorqin",
   "version": "1.0.3",
   "icon": "static/images/icon-green.png",
-  "qna": "https://github.com/aooiuu/z-reader.git/issues",
+  "qna": "https://github.com/hectorqin/z-reader.git/issues",
   "bugs": {
-    "url": "https://github.com/aooiuu/z-reader.git/issues",
+    "url": "https://github.com/hectorqin/z-reader.git/issues",
     "email": "aooiu@qq.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aooiuu/z-reader.git"
+    "url": "https://github.com/hectorqin/z-reader.git"
   },
   "engines": {
     "vscode": "^1.39.0"
@@ -32,74 +32,74 @@
   "contributes": {
     "commands": [
       {
-        "command": "z-reader.command.refresh",
+        "command": "z-reader-plus.command.refresh",
         "title": "本地",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.searchOnline",
+        "command": "z-reader-plus.command.searchOnline",
         "title": "在线",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.openLocalDirectory",
+        "command": "z-reader-plus.command.openLocalDirectory",
         "title": "打开本地文件目录",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.setOnlineSite",
+        "command": "z-reader-plus.command.setOnlineSite",
         "title": "更改在线网站来源",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.setEncoding",
+        "command": "z-reader-plus.command.setEncoding",
         "title": "设置编码",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.setChapterOrder",
+        "command": "z-reader-plus.command.setChapterOrder",
         "title": "设置章节显示顺序",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.collectList",
+        "command": "z-reader-plus.command.collectList",
         "title": "收藏",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.editCollectList",
+        "command": "z-reader-plus.command.editCollectList",
         "title": "编辑收藏列表",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.collectBook",
+        "command": "z-reader-plus.command.collectBook",
         "title": "收藏本书",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.cancelCollect",
+        "command": "z-reader-plus.command.cancelCollect",
         "title": "取消收藏",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       },
       {
-        "command": "z-reader.command.clearCollect",
+        "command": "z-reader-plus.command.clearCollect",
         "title": "清空收藏",
-        "category": "z-reader"
+        "category": "z-reader-plus"
       }
     ],
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "treeView",
+          "id": "z-reader-plus-menu-view",
           "title": "小说",
           "icon": "static/images/icon.svg"
         }
       ]
     },
     "views": {
-      "treeView": [
+      "z-reader-plus-menu-view": [
         {
-          "id": "z-reader-menu",
+          "id": "z-reader-plus-menu",
           "name": "目录"
         }
       ]
@@ -107,83 +107,83 @@
     "menus": {
       "view/title": [
         {
-          "command": "z-reader.command.collectList",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.collectList",
+          "when": "view == z-reader-plus-menu",
           "group": "navigation@1"
         },
         {
-          "command": "z-reader.command.refresh",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.refresh",
+          "when": "view == z-reader-plus-menu",
           "group": "navigation@2"
         },
         {
-          "command": "z-reader.command.searchOnline",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.searchOnline",
+          "when": "view == z-reader-plus-menu",
           "group": "navigation@3"
         },
         {
-          "command": "z-reader.command.openLocalDirectory",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.openLocalDirectory",
+          "when": "view == z-reader-plus-menu",
           "group": "custom@1"
         },
         {
-          "command": "z-reader.command.setOnlineSite",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.setOnlineSite",
+          "when": "view == z-reader-plus-menu",
           "group": "custom@2"
         },
         {
-          "command": "z-reader.command.setEncoding",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.setEncoding",
+          "when": "view == z-reader-plus-menu",
           "group": "custom@3"
         },
         {
-          "command": "z-reader.command.setChapterOrder",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.setChapterOrder",
+          "when": "view == z-reader-plus-menu",
           "group": "custom@4"
         },
         {
-          "command": "z-reader.command.editCollectList",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.editCollectList",
+          "when": "view == z-reader-plus-menu",
           "group": "custom@5"
         },
         {
-          "command": "z-reader.command.clearCollect",
-          "when": "view == z-reader-menu",
+          "command": "z-reader-plus.command.clearCollect",
+          "when": "view == z-reader-plus-menu",
           "group": "custom@6"
         }
       ],
       "view/item/context": [
         {
-          "command": "z-reader.command.openLocalDirectory",
-          "when": "view == z-reader-menu && zreader.panel == local",
+          "command": "z-reader-plus.command.openLocalDirectory",
+          "when": "view == z-reader-plus-menu && zreader.panel == local",
           "group": "custom-item@1"
         },
         {
-          "command": "z-reader.command.setOnlineSite",
-          "when": "view == z-reader-menu && zreader.panel == online",
+          "command": "z-reader-plus.command.setOnlineSite",
+          "when": "view == z-reader-plus-menu && zreader.panel == online",
           "group": "custom-item@2"
         },
         {
-          "command": "z-reader.command.collectBook",
-          "when": "view == z-reader-menu && zreader.panel != collect",
+          "command": "z-reader-plus.command.collectBook",
+          "when": "view == z-reader-plus-menu && zreader.panel != collect",
           "group": "custom-item@3"
         },
         {
-          "command": "z-reader.command.cancelCollect",
-          "when": "view == z-reader-menu && zreader.panel == collect",
+          "command": "z-reader-plus.command.cancelCollect",
+          "when": "view == z-reader-plus-menu && zreader.panel == collect",
           "group": "custom-item@4"
         }
       ]
     },
     "configuration": {
       "type": "object",
-      "title": "z-reader",
+      "title": "z-reader-plus",
       "properties": {
-        "z-reader.fileDir": {
+        "z-reader-plus.fileDir": {
           "type": "string",
           "description": "本地小说目录"
         },
-        "z-reader.onlineSite": {
+        "z-reader-plus.onlineSite": {
           "type": "string",
           "default": "起点",
           "enum": [
@@ -192,7 +192,7 @@
           ],
           "description": "在线搜索来源网站"
         },
-        "z-reader.encoding": {
+        "z-reader-plus.encoding": {
           "type": "string",
           "default": "utf8",
           "enum": [
@@ -201,7 +201,7 @@
           ],
           "description": "txt文件打开编码"
         },
-        "z-reader.chapterOrder": {
+        "z-reader-plus.chapterOrder": {
           "type": "string",
           "default": "顺序",
           "enum": [

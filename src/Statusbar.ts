@@ -6,7 +6,7 @@ class Statusbar implements Disposable {
 
   constructor() {
     this.statusBar = window.createStatusBarItem(StatusBarAlignment.Right, 100);
-    this.updateStatusBar(`z-reader`);
+    this.updateStatusBar(`z-reader-plus`);
     this.statusBar.show();
     readerManager.on('StatusbarUpdateStatusBar', (arg) => this.updateStatusBar(arg));
   }
