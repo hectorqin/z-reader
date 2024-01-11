@@ -11,6 +11,18 @@
 
 ---
 
+🚀下一个摸鱼插件正在路上：
+
+vscode插件 - [any-reader-vscode](https://github.com/aooiuu/any-reader-vscode)
+书源解析库 - [any-reader](https://github.com/aooiuu/any-reader)
+
+
+- 支持自定义书源
+- 书源解析库独立
+- 正在适配网络上公开的海量书源
+
+---
+
 ## 🎉 功能
 
 - [x] 支持格式:txt、epub
