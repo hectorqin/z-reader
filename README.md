@@ -14,8 +14,8 @@
 🚀下一个摸鱼插件正在路上：
 
 vscode插件 - [any-reader-vscode](https://github.com/aooiuu/any-reader-vscode)
-书源解析库 - [any-reader](https://github.com/aooiuu/any-reader)
 
+书源解析库 - [any-reader](https://github.com/aooiuu/any-reader)
 
 - 支持自定义书源
 - 书源解析库独立
@@ -43,7 +43,6 @@ vscode插件 - [any-reader-vscode](https://github.com/aooiuu/any-reader-vscode)
 
 ![2](https://user-images.githubusercontent.com/28108111/68991071-7556e600-0895-11ea-96ca-f8e6cbaffb1c.gif)
 
-![3](https://user-images.githubusercontent.com/28108111/68991073-7851d680-0895-11ea-975a-52aa9875aeed.gif)
 
 ## 摸鱼插件推荐
 
