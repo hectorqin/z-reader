@@ -1,3 +1,15 @@
+⚠️⚠️⚠️ 建议使用新的插件 [any-reader](https://github.com/aooiuu/any-reader) ⚠️⚠️⚠️
+
+- z-reader 开发的比较早, 许多设计不足, 代码也难以维护。
+- any-reader 重新设计, 把书源解析器分析, 实现多源聚合搜索阅读。
+- any-reader 特性：
+  - 自定义源支持
+  - 多源聚合搜索阅读
+  - 支持小说、漫画、电影、游戏等
+  - 更多新功能请关注 [any-reader](https://github.com/aooiuu/any-reader)
+
+---
+
 <h1 align="center">📚 z-reader</h1>
 
 ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/aooiu.z-reader) ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/aooiu.z-reader) ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/aooiu.z-reader)![stars](https://img.shields.io/github/stars/aooiuu/z-reader) ![forks](https://img.shields.io/github/forks/aooiuu/z-reader) ![issues](https://img.shields.io/github/issues/aooiuu/z-reader) ![issues](https://img.shields.io/github/issues-closed/aooiuu/z-reader?color=%2347BB22)
@@ -8,20 +20,6 @@
 - 📗 插件地址: [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=aooiu.z-reader)
 - 📘 更新日志: [CHANGELOG](https://github.com/aooiuu/z-reader/blob/master/CHANGELOG.md)
 - 📙 插件不断完善, 欢迎提交 [issues](https://github.com/aooiuu/z-reader/issues)、[pr](https://github.com/aooiuu/z-reader/pulls)、[star](https://github.com/aooiuu/z-reader)
-
----
-
-🚀下一个摸鱼插件正在路上：
-
-vscode插件 - [any-reader-vscode](https://github.com/aooiuu/any-reader-vscode)
-
-书源解析库 - [any-reader](https://github.com/aooiuu/any-reader)
-
-- 支持自定义书源
-- 书源解析库独立
-- 正在适配网络上公开的海量书源
-
----
 
 ## 🎉 功能
 
